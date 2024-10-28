@@ -1,0 +1,14 @@
+
+long max = long.MIN_VALUE;
+long min = long.MAX_VALUE;
+
+for(int i=0; i<n; i++){
+	if(arr[i]>max){
+	max = arr[i];
+	}
+	if(arr[i]<min){
+ 	min = arr[i];
+	}
+}
+pair p = new pair(max,min)
+return p;
