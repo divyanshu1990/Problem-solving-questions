@@ -1,1 +1,12 @@
+def secondlargest(arr):
+    largest = float('-inf')
+    secondlar = float('-inf')
 
+    for i in range(len(arr)): 
+        if arr[i]>largest:
+            secondlar = largest
+            largest = arr[i]            
+        elif secondlar<arr[i] and largest>arr[i]:
+            secondlar = arr[i]
+
+    return secondlar
