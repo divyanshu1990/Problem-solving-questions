@@ -1,1 +1,9 @@
+def TwoSum(nums, target):
+    seen = {}
+    for i in range(len(nums):
+        complement = target - nums[i]
 
+        if complement in seen:
+            return seen[seen[complement], i]
+
+        seen[nums[i]] = i
