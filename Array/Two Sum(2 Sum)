@@ -4,6 +4,6 @@ def TwoSum(nums, target):
         complement = target - nums[i]
 
         if complement in seen:
-            return seen[seen[complement], i]
+            return [seen[complement], i]
 
         seen[nums[i]] = i
