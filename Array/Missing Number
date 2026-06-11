@@ -1,0 +1,8 @@
+def Missingnumber(nums):
+    
+    sums = sum(nums) 
+    n = len(nums)
+
+    acc = n*(n+1)//2
+
+    return acc-sums
