@@ -1,0 +1,16 @@
+def RotateArray(nums, k):
+    n = len(nums)
+    k = k%n # because 2%5 == 7%5
+
+    def reverse(left, right):
+        while(left<right):
+            nums[right], nums[left] = nums[left], nums[right]
+            left = left+1
+            right = right-1
+
+    reverse(0, n-1)
+    reverse(0, k-1)  
+    reverse(k, n-1)
+
+    return nums
+    
