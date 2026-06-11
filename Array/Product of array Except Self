@@ -9,7 +9,7 @@ def ProductArray(nums):
         prefix = prefix*nums[i]
 
     for i in range(n-1, -1, -1):
-        result[i] = suffix
+        result[i] = result[i]*suffix
         suffix = suffix*nums[i]
 
     return result
