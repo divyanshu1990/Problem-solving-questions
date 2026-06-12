@@ -1,0 +1,24 @@
+def TrappingRain(height):
+    n = len(height)
+
+    water = 0
+    l = 0
+    r = n-1
+    maxleft =0
+    maxright =0
+
+    while l<r:
+        maxleft = max(maxleft, height[l])
+        maxright = max(maxright, height[r])
+
+        if maxleft < maxright:
+            water += maxleft - height[l]
+            l+=1
+        else:
+            water += maxright - height[r]
+            r-=1
+
+    return water
+
+    
+        
