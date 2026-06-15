@@ -1,0 +1,49 @@
+# Integer Palindrome number Traditional Doing
+def Palindrome(n):
+    orginial = n
+    rev = 0
+
+    while n>0:
+        digit = n%10
+        rev = rev*10 + digit
+        n = n//10
+
+    return original == rev
+
+TC: O(logn)
+Sc: O(1)
+
+
+# Convert integer into String then check palindrome or not. 
+def isPalindrome(n):
+    return str(n) == str(n)[::-1]
+
+TC: O(n)
+SC: O(n)
+
+
+# Sring Palindrome
+def isPalindrome(n):
+    return n == n[::-1]
+
+TC: O(n)
+SC: O(n)
+
+# Without Using Slicing (Two Pointers)
+def isPalindrome(s):
+    left = 0
+    right = len(s) - 1
+
+    while left < right:
+        if s[left] != s[right]:
+            return False
+
+        left += 1
+        right -= 1
+
+    return True
+
+TC: O(n)
+SC: O(1)
+
+    
