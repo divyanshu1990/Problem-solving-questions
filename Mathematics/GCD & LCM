@@ -1,0 +1,14 @@
+# GCD Number
+def gcd(a, b):
+    # code here
+    while b!=0:
+        a, b = b, a%b
+        
+    return a
+
+# LCM Number
+def Lcm(a,b):
+    return a*b//gcd(a,b)
+
+LCM & GCD both TC:O(log(min(a,b))
+SC:O(1)
