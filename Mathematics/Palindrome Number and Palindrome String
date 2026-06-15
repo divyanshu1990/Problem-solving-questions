@@ -1,4 +1,4 @@
-# Integer Palindrome number Traditional Doing
+# Integer Palindrome number Traditional Doing(Approach 1)
 def Palindrome(n):
     orginial = n
     rev = 0
@@ -14,7 +14,7 @@ TC: O(logn)
 Sc: O(1)
 
 
-# Convert integer into String then check palindrome or not. 
+# Convert integer into String then check palindrome or not. (Approach 2) 
 def isPalindrome(n):
     return str(n) == str(n)[::-1]
 
@@ -22,14 +22,14 @@ TC: O(n)
 SC: O(n)
 
 
-# Sring Palindrome
+# Sring Palindrome(Approach 1)
 def isPalindrome(n):
     return n == n[::-1]
 
 TC: O(n)
 SC: O(n)
 
-# Without Using Slicing (Two Pointers)
+# string Without Using Slicing (Two Pointers) (Approach 2)
 def isPalindrome(s):
     left = 0
     right = len(s) - 1
