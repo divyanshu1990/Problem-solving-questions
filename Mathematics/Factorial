@@ -1,3 +1,17 @@
+# Recursive Approach
+def fact(n):
+    fact = 1
+
+    if n<=1:
+        return 1
+
+    return n*self.fact(n-1)
+
+Tc:O(n)
+SC:0(n)
+
+
+# Best for Interview
 def fact(n):
     fact = 1
 
@@ -7,3 +21,6 @@ def fact(n):
         fact = fact*i
 
     return fact
+
+TC:O(n)
+SC:O(1)
