@@ -1,5 +1,24 @@
+# Recursion Approach                                         
 def Fib(n):
     if n<=1:
        return n
 
-    return Fib(n-1) + Fib(n-2)
+    return self.Fib(n-1) + self.Fib(n-2)
+
+TC: O(2^n) 
+Sc: o(n)
+
+
+# Best for Interview
+def fib(n):
+    if n<=1:
+        return n
+
+    a,b = 0, 1
+    for i in range(2, n+1):
+        a,b = b, a+b
+
+    return b        # b = a+b everytime adding to the b itself thats why we return b. 
+
+TC: O(n)
+SC: o(1)
